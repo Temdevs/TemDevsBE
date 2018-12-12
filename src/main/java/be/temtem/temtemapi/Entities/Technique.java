@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.util.ArrayList;
 
 @Data
@@ -14,6 +15,8 @@ import java.util.ArrayList;
 public class Technique {
 
     private @Id @GeneratedValue Long id;
+
+    @ManyToOne
     private Type type;
     private String name;
     //physical move, status move ... (don't know if there are more)
