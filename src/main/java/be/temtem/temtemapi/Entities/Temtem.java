@@ -22,8 +22,7 @@ public class Temtem {
     @OneToOne
     private Temtem evolves_from;
 
-    public Temtem(ArrayList<Type> types, String name, String image_uri, Temtem evolves_to,
-                  Temtem evolves_from) {
+    public Temtem(ArrayList<Type> types, String name, String image_uri, Temtem evolves_to, Temtem evolves_from) {
         this.types = types;
         this.name = name;
         this.image_uri = image_uri;
