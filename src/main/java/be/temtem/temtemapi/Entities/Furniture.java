@@ -4,13 +4,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.print.DocFlavor;
 
 @Data
 @Entity
 @NoArgsConstructor
 public class Furniture {
-    /* TODO: use implemented model */
+    @Id
+    private Long id;
     private String classification;
     private String image_url;
     private String img_uri;

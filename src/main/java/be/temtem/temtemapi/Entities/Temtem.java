@@ -3,9 +3,7 @@ package be.temtem.temtemapi.Entities;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.ArrayList;
 
 @Data
@@ -17,17 +15,19 @@ public class Temtem {
     private ArrayList<Type> types;
     private String name;
     private String image_uri;
+
+    @OneToOne
     private Temtem evolves_to;
+
+    @OneToOne
     private Temtem evolves_from;
-    private ArrayList<Technique> techniques;
 
     public Temtem(ArrayList<Type> types, String name, String image_uri, Temtem evolves_to,
-                  Temtem evolves_from, ArrayList<Technique> techniques) {
+                  Temtem evolves_from) {
         this.types = types;
         this.name = name;
         this.image_uri = image_uri;
         this.evolves_to = evolves_to;
         this.evolves_from = evolves_from;
-        this.techniques = techniques;
     }
 }
