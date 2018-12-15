@@ -1,4 +1,4 @@
-allowed-origins: https://textannot.herokuapp.com
+allowed-origins: https://temdevsbe.herokuapp.com
 
 logging:
   level:
