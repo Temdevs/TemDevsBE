@@ -1,6 +1,6 @@
-package be.temtem.temtemapi.Repositories;
+package be.temtem.temtemapi.Repositories.UserInfo;
 
-import be.temtem.temtemapi.Entities.User;
+import be.temtem.temtemapi.Entities.UserInfo.User;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 

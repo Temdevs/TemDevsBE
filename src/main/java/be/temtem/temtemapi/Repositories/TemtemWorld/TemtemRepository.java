@@ -1,6 +1,6 @@
-package be.temtem.temtemapi.Repositories;
+package be.temtem.temtemapi.Repositories.TemtemWorld;
 
-import be.temtem.temtemapi.Entities.Temtem;
+import be.temtem.temtemapi.Entities.TemtemWorld.Temtem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 

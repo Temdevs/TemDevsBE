@@ -1,5 +1,6 @@
-package be.temtem.temtemapi.Entities;
+package be.temtem.temtemapi.Entities.UserInfo;
 
+import be.temtem.temtemapi.Entities.UriEntity;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

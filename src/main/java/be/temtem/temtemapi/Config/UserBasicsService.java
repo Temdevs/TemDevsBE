@@ -1,7 +1,7 @@
 package be.temtem.temtemapi.Config;
 
-import be.temtem.temtemapi.Entities.User;
-import be.temtem.temtemapi.Repositories.UserRepository;
+import be.temtem.temtemapi.Entities.UserInfo.User;
+import be.temtem.temtemapi.Repositories.UserInfo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
