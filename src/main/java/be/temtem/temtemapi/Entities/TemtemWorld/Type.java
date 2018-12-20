@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Data
@@ -11,8 +12,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 public class Type {
 
-    @Id
-    private Long id;
+    @Id @GeneratedValue private Long id;
     private String name;
     private String image_uri;
 }
