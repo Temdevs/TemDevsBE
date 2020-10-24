@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Entity
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 public class Temtem {
 
     private @Id @GeneratedValue Long id;
-    private ArrayList<Type> types;
+    private List<Type> types;
     private String name;
     private String image_uri;
 
