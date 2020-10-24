@@ -1,4 +1,4 @@
-package be.temtem.temtemapi.Entities;
+package be.temtem.temtemapi.Entities.TournamentElements;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;

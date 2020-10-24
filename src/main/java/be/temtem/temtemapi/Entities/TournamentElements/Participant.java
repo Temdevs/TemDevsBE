@@ -1,8 +1,7 @@
-package be.temtem.temtemapi.Entities;
+package be.temtem.temtemapi.Entities.TournamentElements;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

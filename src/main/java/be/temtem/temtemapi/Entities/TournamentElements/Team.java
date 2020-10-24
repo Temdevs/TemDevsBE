@@ -1,4 +1,4 @@
-package be.temtem.temtemapi.Entities;
+package be.temtem.temtemapi.Entities.TournamentElements;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

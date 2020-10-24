@@ -1,10 +1,11 @@
-package be.temtem.temtemapi.Entities;
+package be.temtem.temtemapi.Entities.TemtemWorld;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Entity
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 public class Temtem {
 
     private @Id @GeneratedValue Long id;
-    private ArrayList<Type> types;
+    private List<Type> types;
     private String name;
     private String image_uri;
 
@@ -22,8 +23,7 @@ public class Temtem {
     @OneToOne
     private Temtem evolves_from;
 
-    public Temtem(ArrayList<Type> types, String name, String image_uri, Temtem evolves_to,
-                  Temtem evolves_from) {
+    public Temtem(ArrayList<Type> types, String name, String image_uri, Temtem evolves_to, Temtem evolves_from) {
         this.types = types;
         this.name = name;
         this.image_uri = image_uri;
