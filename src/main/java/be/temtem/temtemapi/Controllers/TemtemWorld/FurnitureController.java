@@ -9,10 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class FurnitureController {
-    @PostMapping("/temtem/create/{classification}")
-    public Furniture createFurniture(@RequestBody String furnitureInfo, @PathVariable String classification) {
+
+    @PostMapping("/temtem/create/")
+    public Furniture createFurniture(@RequestBody String furnitureInfo) {
+
         JSONObject furnitureData = new JSONObject(furnitureInfo);
-        return new Furniture(classification, (String)furnitureData.get("image_url"),
+
+        return new Furniture((String)furnitureData.get("classification"), (String)furnitureData.get("image_url"),
                 (String)furnitureData.get("img_uri"), (Number)furnitureData.get("cost"),
                 (Number) furnitureData.get("space"));
     }
